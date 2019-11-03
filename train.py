@@ -22,8 +22,8 @@ from torchvision import transforms
 from torch.autograd import Variable
 import torch.optim as optim
 
-import warnings
-warnings.filterwarnings("ignore")
+# import warnings
+# warnings.filterwarnings("ignore")
 
 
 if __name__ == "__main__":

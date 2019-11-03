@@ -53,7 +53,7 @@ if __name__ == "__main__":
 
     os.makedirs("output", exist_ok=True)
     os.makedirs("checkpoints", exist_ok=True)
-    os.makedirs(opt.checkpoints, exist_ok=True)
+    os.makedirs(opt.checkpoint, exist_ok=True)
 
     # Get data configuration
     data_config = parse_data_config(opt.data_config)

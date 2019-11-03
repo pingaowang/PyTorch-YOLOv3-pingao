@@ -42,6 +42,7 @@ if __name__ == "__main__":
     parser.add_argument("--multiscale_training", default=True, help="allow for multi-scale training")
     parser.add_argument("--log", type=str, default="logs", help="path to save tfboard log")
     parser.add_argument("--lr", type=float, default=0.001, help="learning rate")
+    parser.add_argument("--checkpoint", type=str, default="checkpoint", help="path to save checkpoint pth.")
     opt = parser.parse_args()
     print(opt)
 
@@ -187,4 +188,4 @@ if __name__ == "__main__":
             """
 
         if epoch % opt.checkpoint_interval == 0:
-            torch.save(model.state_dict(), f"checkpoints/yolov3_ckpt_%d.pth" % epoch)
+            torch.save(model.state_dict(), opt.checkpoint + f"/yolov3_ckpt_%d.pth" % epoch)

@@ -53,6 +53,7 @@ if __name__ == "__main__":
 
     os.makedirs("output", exist_ok=True)
     os.makedirs("checkpoints", exist_ok=True)
+    os.makedirs("opt.checkpoints", exist_ok=True)
 
     # Get data configuration
     data_config = parse_data_config(opt.data_config)
@@ -188,4 +189,4 @@ if __name__ == "__main__":
             """
 
         if epoch % opt.checkpoint_interval == 0:
-            torch.save(model.state_dict(), opt.checkpoint + f"/yolov3_ckpt_%d.pth" % epoch)
+            torch.save(model.state_dict(), opt.checkpoints + f"/yolov3_ckpt_%d.pth" % epoch)

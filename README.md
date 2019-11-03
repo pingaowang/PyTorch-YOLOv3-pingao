@@ -6,6 +6,8 @@ A minimal PyTorch implementation of YOLOv3, with support for training, inference
     $ git clone https://github.com/eriklindernoren/PyTorch-YOLOv3
     $ cd PyTorch-YOLOv3/
     $ sudo pip3 install -r requirements.txt
+    $ pip uninstall tensorflow tensorflow-tensorboard tensorflow-estimator
+    $ pip install tensorflow==1.15.0
 
 ##### Download pretrained weights
     $ cd weights/

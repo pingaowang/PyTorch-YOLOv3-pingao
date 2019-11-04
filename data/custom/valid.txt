@@ -1,1 +1,1 @@
-data/custom/images/png_all_10.jpg
+data/custom/images/1.jpg

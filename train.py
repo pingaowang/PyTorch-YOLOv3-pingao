@@ -39,7 +39,7 @@ if __name__ == "__main__":
     parser.add_argument("--checkpoint_interval", type=int, default=20, help="interval between saving model weights")
     parser.add_argument("--evaluation_interval", type=int, default=1, help="interval evaluations on validation set")
     parser.add_argument("--compute_map", default=False, help="if True computes mAP every tenth batch")
-    parser.add_argument("--multiscale_training", default=True, help="allow for multi-scale training")
+    parser.add_argument("--multiscale_training", default=False, help="allow for multi-scale training")
     parser.add_argument("--log", type=str, default="logs", help="path to save tfboard log")
     parser.add_argument("--lr", type=float, default=0.001, help="learning rate")
     parser.add_argument("--checkpoint", type=str, default="checkpoint", help="path to save checkpoint pth.")

@@ -6,4 +6,5 @@ tensorflow
 tensorboard
 terminaltables
 pillow
+opencv-python
 tqdm

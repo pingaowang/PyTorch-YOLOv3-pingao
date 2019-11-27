@@ -10,3 +10,13 @@ backup
 weights/*.weights
 __pycache__
 checkpoints
+
+ck*
+
+.idea/
+checkpoint/
+config/yolov3-mini.cfg
+config/yolov3-mini.data
+data/custom/*
+
+

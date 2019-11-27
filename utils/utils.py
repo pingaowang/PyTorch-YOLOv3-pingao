@@ -24,6 +24,19 @@ def load_classes(path):
     return names
 
 
+def load_color(path):
+    list_color = list()
+    with open(path) as f_color:
+        rows = f_color.readlines()
+        for row in rows:
+            list_color.append((
+                int(row.split(' ')[0]),
+                int(row.split(' ')[1]),
+                int(row.split(' ')[2].split('\n')[0])
+                ))
+    return list_color
+
+
 def weights_init_normal(m):
     classname = m.__class__.__name__
     if classname.find("Conv") != -1:

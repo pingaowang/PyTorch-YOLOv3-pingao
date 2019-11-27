@@ -1,4 +1,4 @@
-classes= 6
-train=data/custom/train.txt
-valid=data/custom/valid.txt
-names=data/custom/classes.names
+classes= 1
+train=data/mini/train.txt
+valid=data/mini/valid.txt
+names=data/mini/classes.names

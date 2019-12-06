@@ -19,7 +19,6 @@ config/yolov3-mini.cfg
 config/yolov3-mini.data
 data/custom/*
 data/yolo_cad_dataset_v1/
-data/yolo_single_2_2/
 
 logs/
 weights/darknet53.conv.74

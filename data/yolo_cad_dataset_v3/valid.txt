@@ -1,0 +1,7 @@
+data/yolo_cad_dataset_v3/images/2_12_4_8.jpg
+data/yolo_cad_dataset_v3/images/2_12_5_9.jpg
+data/yolo_cad_dataset_v3/images/2_12_5_8.jpg
+data/yolo_cad_dataset_v3/images/2_12_5_3.jpg
+data/yolo_cad_dataset_v3/images/2_12_5_6.jpg
+data/yolo_cad_dataset_v3/images/2_12_5_7.jpg
+data/yolo_cad_dataset_v3/images/2_12_5_4.jpg

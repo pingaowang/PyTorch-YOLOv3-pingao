@@ -27,6 +27,8 @@ import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
 
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -111,8 +113,11 @@ if __name__ == "__main__":
         for batch_i, (_, imgs, targets) in enumerate(dataloader):
             batches_done = len(dataloader) * epoch + batch_i
 
+            # print(targets)
+
             imgs = Variable(imgs.to(device))
             targets = Variable(targets.to(device), requires_grad=False)
+
 
             loss, outputs = model(imgs, targets)
             loss.backward()

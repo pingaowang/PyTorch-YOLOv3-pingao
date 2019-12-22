@@ -22,4 +22,5 @@ data/yolo_cad_dataset_v1/
 
 logs/
 weights/darknet53.conv.74
-
+logs_*
+save_*

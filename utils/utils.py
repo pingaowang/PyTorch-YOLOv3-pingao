@@ -317,9 +317,9 @@ def build_targets(pred_boxes, pred_cls, target, anchors, ignore_thres):
     gw, gh = gwh.t()
     gi, gj = gxy.long().t()
 
-    if gi.max() == nG:
+    if gi.max() >= nG:
         gi[gi.argmax()] = gi.max() - 1
-    if gj.max() == nG:
+    if gj.max() >= nG:
         gj[gj.argmax()] = gj.max() - 1
 
     obj_mask[b, best_n, gj, gi] = 1

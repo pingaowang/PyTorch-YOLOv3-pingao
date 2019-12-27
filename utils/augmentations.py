@@ -84,8 +84,8 @@ def test(images, targets):
             bb_w,
             bb_h
         ])
-        #  if (bb_w / 2) < x_3 < (1 - bb_w / 2) and (bb_h / 2) < y_3 < (1 - bb_h / 2):
-        if 0 < x_3 < 1 and 0 < y_3 < 1:
+        if (bb_w * 2)< x_3 < (1 - bb_w * 2) and (bb_h * 2) < y_3 < (1 - bb_h * 2):
+        # if 0 < x_3 < 1 and 0 < y_3 < 1:
             list_targets_new.append(target_new)
 
     if len(list_targets_new) != 0:

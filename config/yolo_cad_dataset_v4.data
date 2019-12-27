@@ -1,0 +1,4 @@
+classes= 11
+train=data/yolo_cad_dataset_v4/train.txt
+valid=data/yolo_cad_dataset_v4/valid.txt
+names=data/yolo_cad_dataset_v4/classes.names

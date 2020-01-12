@@ -34,6 +34,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--epochs", type=int, default=1001, help="number of epochs")
     parser.add_argument("--batch_size", type=int, default=4, help="size of each image batch")
+    parser.add_argument("--aug_crop", type=float, default=0.2, help="crop range: 0.2 means (0.8, 1.2)")
     parser.add_argument("--gradient_accumulations", type=int, default=2, help="number of gradient accums before step")
     parser.add_argument("--model_def", type=str, default="config/yolov3-custom.cfg", help="path to model definition file")
     parser.add_argument("--data_config", type=str, default="config/custom.data", help="path to data config file")
@@ -79,7 +80,8 @@ if __name__ == "__main__":
     # Get dataloader
     dataset = ListDataset(
         train_path, multiscale=opt.multiscale_training, img_size=opt.img_size,
-        aug_rotate=(0, 360)
+        aug_rotate=(0, 360),
+        aug_random_resize_crop=(1 - opt.aug_crop, 1 + opt.aug_crop)
         # aug_rotate=False
     )
     dataloader = torch.utils.data.DataLoader(

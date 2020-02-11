@@ -177,7 +177,7 @@ class ListDataset(Dataset):
         if self.aug_black_white:
             img = Aug.black_white(img)
 
-        img.show()
+        # img.show()
         # print(targets)
 
         img = transforms.ToTensor()(img)

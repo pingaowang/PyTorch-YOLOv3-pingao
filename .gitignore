@@ -25,7 +25,4 @@ weights/darknet53.conv.74
 logs_*
 save_*
 
-data/coco.names
-data/get_coco_dataset.sh
-data/yolo_single_2_2
-data/yolo_cad_dataet_v*
+data
